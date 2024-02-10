@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Valentín</title>
+<style>
+    body {
+        background-color: #FFACC8;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('fondo.jpg');
+        background-size: contain; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        position: relative; 
+	font-family: 'Lucida Handwriting', cursive;
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 34%;
+        height: 30%; 
+        background-color: rgba(255, 255, 255, 0.8); 
+        backdrop-filter: blur(5px); 
+        z-index: -1; 
+    }
+
+    .contenido {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .frase {
+        font-size: 24px;
+        color: #333;
+        font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive; 
+    }
+
+    .imagen {
+        width: 200px;
+    }
+.boton1 {
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 100px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 250px; 
+    }
+.boton2 {
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 250px; 
+    }
+
+    .boton-no {
+    background-color: #F44336; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.boton-si {
+    background-color: #4CAF50;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+</style>
+</head>
+<body>
+    <div class="contenido">
+        <img class="imagen" src="gato10.jpg" alt="Imagen"> 
+        <p class="frase">QUEE NO HAAAY</p>
+    </div>
+    <!-- Botón "Si" -->
+    <button class="boton1 boton-si" onclick="window.location.href='Third.html';">Si</button>
+    <!-- Botón "No" -->
+    <button class="boton2 boton-no" onclick="window.location.href='tenth.html';">No</button>
+</body>
+</html>

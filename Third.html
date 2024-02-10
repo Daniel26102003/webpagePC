@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San valentin</title>
+<style>
+    body {
+        background-color: #FFACC8;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('fondo.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+	font-family: 'Lucida Handwriting', cursive;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        height: 41%; 
+        background-color: rgba(255, 255, 255, 0.8); 
+        backdrop-filter: blur(5px); 
+        z-index: -1; 
+    }
+
+    .contenido {
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .frase {
+        font-size: 24px;
+        color: #333;
+        font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+    }
+
+    .boton {
+        background-color: #F96F9D;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 185px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gato {
+        position: absolute;
+        bottom: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+    <div class="contenido">
+        <img src="oso.gif" alt="Imagen" width="200"> 
+        <p class="frase">¡Yaaaaaaaay! Te quiero mucho :3</p>
+	<p class="frase">Sabía que dirías que si <3</p>
+    </div>
+    <img class="gato" src="gato3.jpg" alt="Gato" width="200">
+</body>
+</html>
+

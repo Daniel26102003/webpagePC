@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Valentín</title>
+<style>
+    body {
+        background-color: #FFACC8;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('fondo.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Lucida Handwriting', cursive;
+    }
+
+    /* Cuadro borroso */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 38%;
+        height: 40%; 
+        background-color: rgba(255, 255, 255, 0.8); 
+        backdrop-filter: blur(5px); 
+        z-index: -1; 
+    }
+
+    .contenido {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .frase {
+        font-size: 24px;
+        color: #333;
+        font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+    }
+
+    .boton {
+        background-color: #F96F9D;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 238px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+    <div class="contenido">
+        <img src="gato1.jpg" alt="Imagen" width="200"> 
+        <p class="frase">Hola preciosa <3 </p>
+        <p class="frase">Quería preguntarte siii... :3</p>
+    </div>
+    <button class="boton" onclick="window.location.href='Second.html';">Siiii...?</button>
+</body>
+</html>
